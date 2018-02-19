@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+    
+    rabbitmq:
+        image: rabbitmq
+        tty: true
+        
+    consumer:
+        build: ./Consumer/
+        tty: true
+        
